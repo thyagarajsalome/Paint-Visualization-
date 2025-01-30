@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint Visualizer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Visualization Area -->
+      <div class="visualization-area">
+        <img
+          src="./images/base-kitchen.png"
+          alt="Kitchen Base"
+          class="base-image"
+          id="baseImage"
+        />
+
+        <!-- Color Overlays -->
+        <img
+          src="./images/color-1.png"
+          alt="Color 1 Overlay"
+          class="color-overlay"
+          id="color-1-overlay"
+        />
+        <img
+          src="./images/color-2.png"
+          alt="Color 2 Overlay"
+          class="color-overlay"
+          id="color-2-overlay"
+        />
+        <img
+          src="./images/color-3.png"
+          alt="Color 3 Overlay"
+          class="color-overlay"
+          id="color-3-overlay"
+        />
+      </div>
+
+      <!-- Color Selection Area -->
+      <div class="color-selection">
+        <h2>Choose Your Color</h2>
+
+        <div class="color-options">
+          <button
+            class="color-button"
+            data-color="color-1"
+            style="background-color: #d32f2f"
+            aria-label="Rustic Red"
+          ></button>
+          <button
+            class="color-button"
+            data-color="color-2"
+            style="background-color: #1976d2"
+            aria-label="Ocean Blue"
+          ></button>
+          <button
+            class="color-button"
+            data-color="color-3"
+            style="background-color: #388e3c"
+            aria-label="Forest Green"
+          ></button>
+        </div>
+
+        <button class="reset-button" id="resetButton">Reset to Default</button>
+
+        <div class="selected-color" id="selectedColorText"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

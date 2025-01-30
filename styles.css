@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Visualization Area */
+.visualization-area {
+  position: relative;
+  width: 100%;
+  height: 812px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.base-image,
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.color-overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: multiply;
+}
+
+/* Color Selection Area */
+.color-selection {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.color-options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.color-button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.color-button:hover {
+  transform: scale(1.05);
+}
+
+.color-button.active {
+  outline: 4px solid #3b82f6;
+}
+
+.reset-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #d1d5db;
+}
+
+.selected-color {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+}
