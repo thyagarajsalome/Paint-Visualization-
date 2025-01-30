@@ -1,8 +1,8 @@
 // Color configuration
 const colors = {
-  "color-1": "Rustic Red",
-  "color-2": "Ocean Blue",
-  "color-3": "Forest Green",
+  "color-1": "#d5d265",
+  "color-2": "#b73352",
+  "color-3": "#4a59a6",
 };
 
 let currentColor = null;
@@ -31,7 +31,7 @@ function selectColor(colorId) {
 
     overlay.style.opacity = "1";
     button.classList.add("active");
-    selectedColorText.textContent = `Selected: ${colors[colorId]}`;
+    selectedColorText.innerHTML = `Selected Color: <span class="selected-color-id">${colors[colorId]}</span>`;
     currentColor = colorId;
   } else {
     // If clicking the same color or resetting
