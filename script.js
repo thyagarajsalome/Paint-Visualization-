@@ -3,6 +3,13 @@ const colors = {
   "color-1": "#d5d265",
   "color-2": "#b73352",
   "color-3": "#4a59a6",
+  "color-4": "#178b7e",
+  "color-5": "#e6ad5d",
+  "color-6": "#6bbec1",
+  "color-7": "#c66363",
+  "color-8": "#b073df",
+  "color-9": "88a765",
+  "color-10": "#709abf",
 };
 
 let currentColor = null;
